@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class cons
+{
+    int n;
+    public:
+    ccons()//dc
+    ccons(int p);//pc
+    {
+    n=p;
+    }
+    ccons(ccons & ob)//cc
+    {
+    m=ob.n;
+    }
+    void display()
+    {
+    cout<<n;
+    }
+};
+int main()
+{
+ccons ob1(100);
+ob1.display();
+ccons ob2(ob1);
+ob2.display();
+return 0;
+}
+
+
